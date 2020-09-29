@@ -16,3 +16,21 @@ var puedePasar:Bool = true
 //De esta manera provocamos que este string pueda ser null
 var optional:String?
 print("valor de optional es -> \(optional)")
+
+var abecedario = ["A","B","C","D","E"]
+
+let mamiferos: Set<String> = ["Perro","Delfin","Gato"]
+let reptiles:Set<String> = ["Cocodrilo","Salamandra"]
+print(mamiferos.union(reptiles).sorted())
+
+//DICCIONARIO
+var equipos : [String:String] = ["MAD":"Real Madrid", "FCB": "Barcelona", "ATL":"Atlético de Madrid"]
+equipos["FCB"] = "Futbol Club Barcelona"
+
+for equipo in equipos{
+    print(equipo.value)
+}
+
+for (equipoKey, equipoValue) in equipos{
+    print("\(equipoKey) \(equipoValue)")
+}
